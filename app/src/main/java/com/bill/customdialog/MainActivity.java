@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 Utils.copy(editText.getText().toString());
                 Toast.makeText(MainActivity.this, "复制", Toast.LENGTH_SHORT).show();
             }
-        });
+        }).setLeftImage(R.mipmap.ic_launcher);
         CopyCommentDialog dialog = builder.create();
         dialog.showDialog();
     }
